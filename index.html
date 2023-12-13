@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Weather Map</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Your existing CSS goes here */
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Weather Map</h1>
-    <input type="text" id="searchInput" placeholder="Search for a country...">
-    <button id="searchButton">Search</button>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for a country...">
+      <button id="searchButton">Search</button>
+    </div>
   </header>
   <main>
-    <div class="weather-info" id="weatherInfo">
-      <!-- Weather information will be displayed here -->
+    <div class="weather-info" id="weather">
+      <!-- Weather information content will go here -->
     </div>
   </main>
-  <script src="script.js"></script>
 </body>
+
 </html>
+
