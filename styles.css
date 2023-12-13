@@ -1,45 +1,62 @@
+/* styles.css */
+
+/* Reset default margin and padding */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #a0a0a0;
   }
   
+  /* Style the header */
   header {
-    background-color: #74787a;
-    color: rgb(209, 207, 207);
+    background-color: #494949;
+    color: white;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   h1 {
     margin: 0;
+    font-size: 2em;
+    /* Move title to the left */
+    margin-right: auto;
   }
   
-  input[type="text"] {
-    padding: 8px;
+  #searchInput {
+    padding: 12px;
+    font-size: 1em;
     margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
   }
   
-  button {
-    padding: 8px 16px;
-    background-color: #2980b9;
+  #searchButton {
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: #bbcdda;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
   }
   
-  button:hover {
-    background-color: #1c4966;
+  #searchButton:hover {
+    background-color: #1c6fa9;
   }
   
-  .main {
+  main {
     padding: 20px;
+    text-align: center;
   }
   
   .weather-info {
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #b9b9b9;
+    padding: 100px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;

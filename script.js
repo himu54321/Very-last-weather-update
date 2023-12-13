@@ -1,4 +1,4 @@
-document.getElementById('searchButton').addEventListener('click', function() {
+document.getElementById('searchButton').addEventListener('click', function () {
     const searchInput = document.getElementById('searchInput').value;
     getWeather(searchInput);
   });
@@ -23,22 +23,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
       <p>Weather: ${data.weather[0].description}</p>
       <p>Temperature: ${Math.round(data.main.temp - 273.15)}°C</p>
       <p>Humidity: ${data.main.humidity}%</p>
-      <img src="${getWeatherImage(data.weather[0].main)}" alt="Weather Image">
+      <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="Weather Image">
     `;
-  }
-  
-  function getWeatherImage(weather) {
-    switch (weather) {
-      case 'Rain':
-        return 'rain-image-url';
-      case 'Clouds':
-        return 'cloud-image-url';
-      case 'Clear':
-        return 'sunny-image-url';
-      case 'Thunderstorm':
-        return 'storm-image-url';
-      default:
-        return '';
-    }
   }
   
