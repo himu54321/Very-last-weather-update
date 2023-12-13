@@ -41,3 +41,4 @@ document.getElementById('searchButton').addEventListener('click', function() {
         return '';
     }
   }
+  
